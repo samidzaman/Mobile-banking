@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikash</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-black grid place-content-center bg-white ">
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div class="stat-title">Account Blance</div>
+                        <div id="blance" class="stat-value">8400</div>
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!--feature button -->
+                <button id="add-mony-btn" class="btn">Addmony</button>
+                <button id="cash-out-btn" class="btn">Cashout</button>
+                <button id="transection-btn" class="btn">Transection</button>
+
+                <!--feature button -->
+                <div class="divider"></div>
+                <!-- Addmony form start -->
+                <div id="add-mony-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label">Amount</label>
+                            <input id="add-amount" type="text" class="input" placeholder="Enter you phone" />
+                            <label class="label">Pin</label>
+                            <input id="pin-number" autocomplete="off" type="password" class="input" placeholder="Pin" />
+                            <button id="btn-addmony" class="btn btn-neutral mt-4">Add mony</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- Add mony form end -->
+
+                <!-- Cashoutform start -->
+
+                <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label">Amount</label>
+                            <input id="cash-out-amount" type="text" class="input" placeholder="Enter you phone" />
+                            <label class="label">Pin</label>
+                            <input id="cash-out-pin-number" autocomplete="off" type="password" class="input"
+                                placeholder="Pin" />
+                            <button id="btn-cashout" class="btn btn-neutral mt-4">Cash out</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Cashoutform end -->
+                <!-- transection start-->
+                <div id="transection-section" class="hidden">
+                    <h2 class="text-5xl text-center">Transection histry</h2>
+                    <div id="transection-container">
+
+
+                    </div>
+                </div>
+                <!-- transection end -->
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <script src="js/utilities2.js"></script>
+    <script src="js/addmony2.js"></script>
+    <script src="Js/cashout.js"></script>
+    <script src="Js/feature.js"></script>
+</body>
+
+</html>
