@@ -6,7 +6,7 @@ document.getElementById('btn-login').addEventListener('click', function (event) 
 
     if (PhoneNumber === '01322013512' && PinNumber === 578023) {
         console.log("loged in")
-        window.location.href = 'home.html'
+        window.location.href = 'Home.html'
     }
     else {
         alert('wrong info')
